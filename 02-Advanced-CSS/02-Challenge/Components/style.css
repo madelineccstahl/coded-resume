@@ -1,0 +1,142 @@
+body {
+    background-color: #20A1A1;
+}
+
+header {
+    position: relative;
+    min-height: 50px;
+    min-width: 100%;
+    background: orange;
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-shadow:
+    -1px -1px 0 #3db5b5, /* Top-left shadow */
+    1px -1px 0 #3db5b5, /* Top-right shadow */
+    -1px 1px 0 #3db5b5, /* Bottom-left shadow */
+    1px 1px 0 #3db5b5; /* Bottom-right shadow */
+    position: absolute;
+    color: teal;
+    font-family: Arial, sans-serif;
+    z-index: 1; /*place h1 above background*/
+}
+
+.transparent-texture {
+    opacity: 0.5;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.headerBackground {
+    background: orange;
+    min-height: 50px;
+    min-width: 100%;
+}
+
+/*.header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
+
+.sidebar {
+    display: flex;
+    width: 250px;
+    background-color:#20A1A1;
+    color: orange;
+    padding: 20px;
+    flex: left;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: o;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.aboutme {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+    display: flex;
+    color: orange;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.departments {
+    flex: 1;
+    position: relative;
+    display: flex;
+    margin-left: 250px;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.deparmentimage {
+    max-width: 400px;
+    min-width: 150px;
+    height: auto;
+    flex-direction: row;
+    flex-grow: 2;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.departmentimage:hover {
+    filter: brightness(1.2);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-shadow:
+    -1px -1px 0 #008080, /* Top-left shadow */
+    1px -1px 0 #008080, /* Top-right shadow */
+    -1px 1px 0 #008080, /* Bottom-left shadow */
+    1px 1px 0 #008080; /* Bottom-right shadow */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 3px;
+    margin: 2px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #008080;
+}
